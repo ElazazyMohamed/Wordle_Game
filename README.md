@@ -72,3 +72,6 @@ Remaining Guesses are 3
 Enter a word composed of 5 letters:
 |: horse.
 You Won!
+
+
+-To run the game open the file Wordle Game.pl in a prolog interpreter then type 'main.'
