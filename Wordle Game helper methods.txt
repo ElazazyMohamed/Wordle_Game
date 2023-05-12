@@ -1,0 +1,25 @@
+write('Welcome to Pro-Wordle!')
+			,nl,
+			write('----------------------'),nl,nl
+
+------------------------------------------------------------------------------------
+String length :
+
+value_length([],0).
+value_length([_|END], A) :-
+value_length(END, A1), A is A1+1.
+
+------------------------------------------------------------------------------------
+Intersection :
+
+intersection([X|Y],M,[X|Z]) :-   member(X,M) , intersection(Y,M,Z).
+intersection([X|Y],M,Z) :-   \+ member(X,M) , intersection(Y,M,Z).
+intersection([],M,[]).
+
+------------------------------------------------------------------------------------
+
+Member :
+
+member(X,[X,_]).
+member(X,[_,T]) :- member(X,T)
+
